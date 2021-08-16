@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on Thu Dec 17 17:08:03 2020 by Eclipse SUMO netedit Version 1.6.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="/Users/weizhenglin/Desktop/GWU%20PhD/TMF-SUMO/9%20by%209%20capability%20sim/3_lane_tollbus22.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="/Users/weizhenglin/Desktop/GWU%20PhD/TMF-SUMO/9%20by%209%20capability%20sim/3_lane_tollbus22.net.xml"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="false"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.5"/>
+        <rectangular-lane-cut value="false"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="false"/>
+    </pedestrian>
+
+    <report>
+        <aggregate-warnings value="5"/>
+    </report>
+
+</configuration>
+-->
+
+<net version="1.6" junctionCornerDetail="5" limitTurnSpeed="5.50" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="0.00,0.00" convBoundary="0.00,0.00,700.00,0.00" origBoundary="-10000000000.00,-10000000000.00,10000000000.00,10000000000.00" projParameter="!"/>
+
+    <edge id=":gneJ4_0" function="internal">
+        <lane id=":gneJ4_0_0" index="0" allow="private bus" speed="514.50" length="3.00" shape="98.50,-8.00 101.50,-8.00"/>
+        <lane id=":gneJ4_0_1" index="1" speed="514.50" length="3.00" shape="98.50,-4.80 101.50,-4.80"/>
+        <lane id=":gneJ4_0_2" index="2" speed="514.50" length="3.00" shape="98.50,-1.60 101.50,-1.60"/>
+    </edge>
+    <edge id=":gneJ5_0" function="internal">
+        <lane id=":gneJ5_0_0" index="0" allow="private bus" speed="30.00" length="3.00" shape="598.50,-8.00 601.50,-8.00"/>
+        <lane id=":gneJ5_0_1" index="1" speed="22.50" length="3.00" shape="598.50,-4.80 601.50,-4.80"/>
+        <lane id=":gneJ5_0_2" index="2" speed="22.50" length="3.00" shape="598.50,-1.60 601.50,-1.60"/>
+    </edge>
+
+    <edge id="Beg" from="gneJ0" to="gneJ4" priority="-1" length="1000.00">
+        <lane id="Beg_0" index="0" allow="pedestrian" speed="999.00" length="1000.00" shape="0.00,-11.20 98.50,-11.20"/>
+        <lane id="Beg_1" index="1" speed="999.00" length="1000.00" shape="0.00,-8.00 98.50,-8.00"/>
+        <lane id="Beg_2" index="2" speed="999.00" length="1000.00" shape="0.00,-4.80 98.50,-4.80"/>
+        <lane id="Beg_3" index="3" speed="999.00" length="1000.00" shape="0.00,-1.60 98.50,-1.60"/>
+    </edge>
+    <edge id="End" from="gneJ5" to="gneJ1" priority="-1" length="1000.00">
+        <lane id="End_0" index="0" allow="pedestrian" speed="15.00" length="1000.00" shape="601.50,-11.20 700.00,-11.20"/>
+        <lane id="End_1" index="1" allow="private bus" speed="30.00" length="1000.00" shape="601.50,-8.00 700.00,-8.00"/>
+        <lane id="End_2" index="2" speed="15.00" length="1000.00" shape="601.50,-4.80 700.00,-4.80"/>
+        <lane id="End_3" index="3" speed="15.00" length="1000.00" shape="601.50,-1.60 700.00,-1.60"/>
+    </edge>
+    <edge id="Road" from="gneJ4" to="gneJ5" priority="-1" length="5000.00">
+        <lane id="Road_0" index="0" allow="private bus" speed="30.00" length="5000.00" shape="101.50,-8.00 598.50,-8.00"/>
+        <lane id="Road_1" index="1" speed="30.00" length="5000.00" shape="101.50,-4.80 598.50,-4.80"/>
+        <lane id="Road_2" index="2" speed="30.00" length="5000.00" shape="101.50,-1.60 598.50,-1.60"/>
+    </edge>
+
+    <junction id="gneJ0" type="dead_end" x="0.00" y="0.00" incLanes="" intLanes="" shape="0.00,0.00 0.00,-12.80"/>
+    <junction id="gneJ1" type="dead_end" x="700.00" y="0.00" incLanes="End_0 End_1 End_2 End_3" intLanes="" shape="700.00,-12.80 700.00,0.00"/>
+    <junction id="gneJ4" type="priority" x="100.00" y="0.00" incLanes="Beg_0 Beg_1 Beg_2 Beg_3" intLanes=":gneJ4_0_0 :gneJ4_0_1 :gneJ4_0_2" shape="101.50,0.00 101.50,-9.60 98.50,-12.80 98.50,0.00">
+        <request index="0" response="000" foes="000" cont="0"/>
+        <request index="1" response="000" foes="000" cont="0"/>
+        <request index="2" response="000" foes="000" cont="0"/>
+    </junction>
+    <junction id="gneJ5" type="priority" x="600.00" y="0.00" incLanes="Road_0 Road_1 Road_2" intLanes=":gneJ5_0_0 :gneJ5_0_1 :gneJ5_0_2" shape="601.50,0.00 601.50,-12.80 598.50,-9.60 598.50,0.00">
+        <request index="0" response="000" foes="000" cont="0"/>
+        <request index="1" response="000" foes="000" cont="0"/>
+        <request index="2" response="000" foes="000" cont="0"/>
+    </junction>
+
+    <connection from="Beg" to="Road" fromLane="1" toLane="0" via=":gneJ4_0_0" dir="s" state="M"/>
+    <connection from="Beg" to="Road" fromLane="2" toLane="1" via=":gneJ4_0_1" dir="s" state="M"/>
+    <connection from="Beg" to="Road" fromLane="3" toLane="2" via=":gneJ4_0_2" dir="s" state="M"/>
+    <connection from="Road" to="End" fromLane="0" toLane="1" via=":gneJ5_0_0" dir="s" state="M"/>
+    <connection from="Road" to="End" fromLane="1" toLane="2" via=":gneJ5_0_1" dir="s" state="M"/>
+    <connection from="Road" to="End" fromLane="2" toLane="3" via=":gneJ5_0_2" dir="s" state="M"/>
+
+    <connection from=":gneJ4_0" to="Road" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":gneJ4_0" to="Road" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":gneJ4_0" to="Road" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":gneJ5_0" to="End" fromLane="0" toLane="1" dir="s" state="M"/>
+    <connection from=":gneJ5_0" to="End" fromLane="1" toLane="2" dir="s" state="M"/>
+    <connection from=":gneJ5_0" to="End" fromLane="2" toLane="3" dir="s" state="M"/>
+
+</net>

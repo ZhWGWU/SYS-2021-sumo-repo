@@ -1,0 +1,10 @@
+<routes>
+<vType id="normal_car" length="5" maxSpeed="30" accel="1.2" decel="2.5" sigma="0" vClass="passenger"/>
+<vType id="bus" length="15" maxSpeed="30" accel="1.2" decel="2.5" sigma="0" vClass="bus"/>
+<vType id="paying_car" length="5" maxSpeed="30" accel="1.2" decel="2.5" sigma="0" vClass="private"/>
+
+<flow id="normal_car" type="normal_car" begin="0" end="5000" number="2300" from="Beg" to="End" departPos="free" departLane="best" />
+<flow id="bus" type="bus" begin="0" end="5000" number="100" from="Beg" to="End" departPos="free" departLane="best" color="red" />
+<flow id="paying_car" type="paying_car" begin="0" end="5000" number="680" from="Beg" to="End" departPos="free" departLane="best" color = "green"/>
+
+</routes>

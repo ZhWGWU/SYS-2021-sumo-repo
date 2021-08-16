@@ -1,0 +1,9 @@
+<configuration>
+   <input>
+       <net-file value="3_lane_tollbushov32.net.xml"/>
+       <route-files value="demand_flow_3.2_LowV.rou.xml"/>
+   </input>
+   <processing>
+    <lateral-resolution value="1." />
+   </processing>
+</configuration>

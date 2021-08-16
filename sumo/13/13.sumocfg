@@ -1,0 +1,9 @@
+<configuration>
+   <input>
+       <net-file value="3_lane_toll_HighVLowSpeed.net.xml"/>
+       <route-files value="demand_flow_1.3.rou.xml"/>
+   </input>
+   <processing>
+    <lateral-resolution value="1." />
+   </processing>
+</configuration>

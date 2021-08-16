@@ -1,0 +1,9 @@
+<configuration>
+   <input>
+       <net-file value="3_lane_busonly.net.xml"/>
+       <route-files value="demand_flow_2.1_LowV.rou.xml"/>
+   </input>
+   <processing>
+    <lateral-resolution value="1." />
+   </processing>
+</configuration>
