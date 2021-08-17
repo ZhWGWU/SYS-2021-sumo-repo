@@ -1,6 +1,6 @@
 # SYS-2021-sumo-repo
 
-This repository contains the data and code to reproduce results in the paper entitled "Evolvability Analysis Framework: Adding Transition Path and Stakeholder Diversity to Infrastructure Investment Decisions"" are for publication in Systems Engineering.
+This repository contains the data and code to reproduce results in the paper entitled "Evolvability Analysis Framework: Adding Transition Path and Stakeholder Diversity to Infrastructure Investment Decisions" for publication in Systems Engineering.
 
 To reproduce the result, install ["Simulation of Urban MObility" (SUMO)](https://sumo.dlr.de/) and run the .sumocfg file accordingly for each state. Both sumo configuration files and data were stored per state mapping the figure below (Figure 4 Case Study Operational States in the paper).
 
